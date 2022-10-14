@@ -10,8 +10,6 @@ function router($params) {
         $app = new Application();
         switch ($method) {
             case 'login': return $app->login($params);
-            case 'convert': return $app->convert($params);
-            //...
         }
     }
     return false;

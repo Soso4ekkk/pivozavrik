@@ -20,17 +20,4 @@ class Server {
         }
         return null;
     }
-
-    convert(value, systemFrom, systemTo) {
-        if (this.token && value && systemFrom && systemTo) {
-            return this.send({ 
-                method: 'convert', 
-                value, 
-                systemFrom, 
-                systemTo, 
-                token: this.token 
-            });
-        }
-        return null;
-    }
 }
