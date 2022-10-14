@@ -42,11 +42,13 @@ html, body {
     font-size: 14pt;
 }
 
-.passwordControl {
+.passwordWrapper {
     position: relative;
-    float: right;
-    z-index: 1;
-    margin-right: -48px;
+}
+
+.passwordControl {
+    position: absolute;
+    right: 5px;
 	width: 40px;
 	height: 40px;
     background-color: #ffffb3;
