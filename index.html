@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>хуета</title>
+        <script src='public/js/Server.js'></script>
+        <script src='public/js/main.js'></script>
+    </head>
+    <body>
+        <div class="windowAuthorization">
+            <div class="inputLogin">
+                <input id="login" class="login" placeholder="логин">
+                <div>
+                    <a href="#" class="passwordControl" onclick="return show_hide_password(this);"></a>
+                    <input id="password" class="password" placeholder="пароль" type="password">
+                </div>
+            </div>
+            <button id="sendLogin" class="sendLogin">авторизоваться</button>
+        </div>
+        <script>
+            function show_hide_password(target){
+                var input = document.getElementById('password');
+                if (input.getAttribute('type') == 'password') {
+                    target.classList.add('view');
+                    input.setAttribute('type', 'text');
+                } else {
+                    target.classList.remove('view');
+                    input.setAttribute('type', 'password');
+                }
+                return false;
+            }
+            </script>
+    </body>
 </html>
