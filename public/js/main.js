@@ -13,10 +13,5 @@ window.onload = function () {
         console.log(data);
     }
 
-    function sendConvertHandler() {
-        server.convert(1, 'a', 'b');
-    }
-
     document.getElementById('sendLogin').addEventListener('click', sendLoginHandler);
-    document.getElementById('sendConvert').addEventListener('click', sendConvertHandler);
 };
