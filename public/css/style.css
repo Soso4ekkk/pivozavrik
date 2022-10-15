@@ -1,3 +1,9 @@
+body {
+    background: url("/src/фон\ пивозаврики.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 html, body {
     margin: 0;
 }
@@ -28,7 +34,7 @@ html, body {
 
 .login, .password {
     height: 40px;
-    background-color: #ffffb3;
+    background-color: #ffffd6;
     border: 0;
     font-size: 12pt;
     font-family: 'Source Code Pro', monospace;
@@ -38,7 +44,7 @@ html, body {
 }
 
 .login:hover, .password:hover {
-    background: #ffffd6;
+    background: #ffe2e2;
     font-size: 14pt;
 }
 
@@ -49,8 +55,9 @@ html, body {
 .passwordControl {
     position: absolute;
     right: 5px;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
+    margin-top: 5px;
     background-color: #ffffb3;
 	background: url(/src/viewPassword.png);
 }
@@ -66,7 +73,7 @@ html, body {
 .sendLogin {
     width: 350px;
     height: 50px;
-    background-color: #ffff8a;
+    background-color: #f7baba;
     border: 0;
     font-size: 16pt;
     font-family: 'Source Code Pro', monospace;
